@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <title>قسم علوم الحاسوب | منهاج</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fonts & Icon Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap (if not already included) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- AOS (Animate On Scroll) library (optional, if you want more variety) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+    <style>
+      /* RTL adjustments */
+      body {
+        text-align: right;
+      }
+      .nav-tabs .nav-item .nav-link {
+        margin-right: 0;
+        margin-left: 3px;
+      }
+      .breadcrumb-item + .breadcrumb-item::before {
+        content: "›";
+      }
+
+      /* Example custom styling for the counters section */
+      .counter-section {
+        background: url('images/bg_3.jpg') no-repeat center center fixed;
+        background-size: cover;
+        position: relative;
+      }
+      .counter-section .overlay {
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+      .counter-section .counter-wrap {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      .counter-section .block-18 {
+        background: rgba(213, 120, 12, 0.9);
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .counter-section .icon {
+        font-size: 40px;
+        color: #f96d00;
+        margin-bottom: 10px;
+      }
+
+      /* ============ Four Stages Section Styles ============ */
+      .stage-section .stage-card {
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 40px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        
+      }
+      .stage-section .stage-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+      }
+      .stage-section .stage-card-header {
+        position: relative;
+        padding: 30px 20px;
+        color: #fff;
+        border-bottom: 1px solid #eee;
+      }
+      .stage-section .stage-card-header h3 {
+        margin-bottom: 0;
+        font-size: 24px;
+      }
+      /* Overlay effect on header */
+      .stage-section .stage-card-header .overlay-header {
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        background: rgba(0, 0, 0, 0.4);
+      }
+      .stage-section .stage-card-body {
+        padding: 20px;
+      }
+      /* Example different backgrounds for each stage header image */
+      .stage1-bg {
+        background: url('https://www.nottingham.ac.uk/ComputerScience/Images-Multimedia/2019/web-3706562-1280.jpg') no-repeat center center;
+        background-size: cover;
+      }
+      .stage2-bg {
+        background: url('https://th.bing.com/th/id/R.a8bba4026aea670fe7752948fc0cd1a1?rik=ck0uR3Is%2fd1%2bZw&pid=ImgRaw&r=0') no-repeat center center;
+        background-size: cover;
+      }
+      .stage3-bg {
+        background: url('https://3.imimg.com/data3/MU/PB/MY-9580489/welcome-to-the-department-of-computer-science-engineering-500x500.jpg') no-repeat center center;
+        background-size: cover;
+      }
+      .stage4-bg {
+        background: url('https://computerscienceengineeringinindia.wordpress.com/wp-content/uploads/2015/04/computer-science-engineering3.png?w=960&h=300&crop=1') no-repeat center center;
+        background-size: cover;
+      }
+
+      /* Nav tabs custom styling */
+      .nav-tabs .nav-link {
+        color: #555555;
+        border-radius: 0;
+      }
+      .nav-tabs .nav-link.active {
+        color: #fff;
+        background-color: #f96d00;
+        border-color: #f96d00;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Top Bar -->
+    <div class="bg-top navbar-light">
+      <div class="container">
+        <div class="row no-gutters d-flex align-items-center align-items-stretch">
+          <div class="col-md-4 d-flex align-items-center py-4">
+            <img 
+              src="cropped_image.png" 
+              alt="شعار" width="40" height="40"
+              class="d-inline-block align-text-top"
+            >
+            <a class="navbar-brand" href="index.html">
+              منهاج<span> منصة تعليمية</span>
+            </a>
+          </div>
+          <div class="col-lg-8 d-block">
+            <div class="row d-flex">
+              <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+                <div class="icon d-flex justify-content-center align-items-center">
+                  <span class="icon-paper-plane"></span>
+                </div>
+                <div class="text">
+                  <span>البريد الإلكتروني</span>
+                  <span>mohammeninja@gmail.com</span>
+                </div>
+              </div>
+              <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+                <div class="icon d-flex justify-content-center align-items-center">
+                  <span class="icon-phone2"></span>
+                </div>
+                <div class="text">
+                  <span>اتصل بنا</span>
+                  <span>07801917387</span>
+                </div>
+              </div>
+              <div class="col-md topper d-flex align-items-center justify-content-end">
+                <p class="mb-0">
+                  <a 
+                    href="cm.html" 
+                    class="btn py-2 px-3 btn-primary d-flex align-items-center justify-content-center"
+                  >
+                    <span>سجل الآن</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container d-flex align-items-center px-4">
+        <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#ftco-nav" 
+          aria-controls="ftco-nav" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation"
+        >
+          <span class="oi oi-menu"></span> القائمة
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link">الرئيسية</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">عن المنصة</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                الاقسام
+              </a>
+              <ul  aria-labelledby="coursesDropdown" class="dropdown-menu animate__animated animate__fadeInDown">
+                <li><a class="dropdown-item" href="IT.html"> نظم معلومات حاسوبية </a></li>
+                <li><a class="dropdown-item" href="cyber.html">الامن السيبراني </a></li>
+                <li><a class="dropdown-item" href="modical.html">الانظمة الطبية الذكية </a></li>
+              </ul>
+            </li>
+            
+            <li class="nav-item"><a href="free_course.html" class="nav-link">الكورسات</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+            <!-- Highlight the 'CS Dept.' in the menu if you'd like -->
+            <li class="nav-item active">
+              <a href="cs-department.html" class="nav-link">
+                قسم علوم الحاسوب
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+
+    <!-- Hero / Header Section (Optional) -->
+    <section 
+      class="hero-wrap hero-wrap-2"
+      style="background-image: url('images/bg_1.jpg');" 
+      data-stellar-background-ratio="0.5"
+    >
+      <div class="overlay"></div>
+      <div class="container">
+        <div 
+          class="row no-gutters slider-text align-items-center justify-content-center"
+        >
+          <div class="col-md-9 text-center">
+            <h1 class="mb-2 bread" data-aos="fade-down">قسم علوم الحاسوب</h1>
+            <p class="breadcrumbs" data-aos="fade-up" data-aos-delay="100">
+              <span class="mr-2">
+                <a href="index.html">الرئيسية 
+                  <i class="ion-ios-arrow-forward"></i>
+                </a>
+              </span> 
+              <span>علوم الحاسوب 
+                <i class="ion-ios-arrow-forward"></i>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Department Info Section -->
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 data-aos="zoom-in">حول قسم علوم الحاسوب</h2>
+            <p class="lead" data-aos="fade-left" data-aos-delay="200">
+              قسم علوم الحاسوب هو أحد الأقسام العلمية في كليتنا، يهدف إلى إعداد طلبة مؤهلين 
+              في مجال تكنولوجيا المعلومات وإدارة البيانات وتطوير الأنظمة والبرمجيات والعديد 
+              من المهارات المتقدمة في علوم الحاسوب.
+            </p>
+            <p data-aos="fade-left" data-aos-delay="300">
+              نقدم في هذا القسم برنامجًا دراسيًا متكاملًا يمتد إلى أربع مراحل (سنوات). 
+              يتضمن البرنامج مقررات نظرية وعملية تزود الطالب بالمعرفة الكاملة في مجال البرمجة، 
+              هياكل البيانات، أنظمة التشغيل، قواعد البيانات، الذكاء الإصطناعي وغيرها.
+            </p>
+            <img 
+              src="https://i.ytimg.com/vi/4O19BbcpXHc/maxresdefault.jpg" 
+              alt="صورة مبنى القسم" 
+              class="img-fluid mt-3 mb-3" 
+              data-aos="zoom-in-up"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ftco-section bg-light">
+      <div class="container" data-aos="fade-left">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card sec-card">
+              <img 
+                src="https://www.improveit360.com/wp-content/uploads/salesdoor.jpg" 
+                class="card-img-top"
+                alt="Card 1"
+              >
+              <div class="card-body">
+                <h4>مطورين العاب </h4>
+                <p>
+                  من الممكن ان يعمل خريجو هذا القسم بمختلف المجالات منها قطاع صناعة الالعاب الرائع
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card sec-card">
+              <img 
+                src="https://media.licdn.com/dms/image/D4E12AQET2wpow-s4ew/article-cover_image-shrink_600_2000/0/1682661571464?e=2147483647&v=beta&t=dgGYFVRRLbxJPW7ooHKaRhyTRBq80-SPIGkmzizVxpg" 
+                class="card-img-top"
+                alt="Card 2"
+              >
+              <div class="card-body">
+                <h4>مبرمجين عاليين المستوى  </h4>
+                <p>
+                  تصميم قواعد البيانات، إدارة البيانات، و برمجة المواقع و التطبيقات الذكية.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card sec-card">
+              <img 
+                src="https://www.websentra.com/wp-content/uploads/systems-management.jpg" 
+                class="card-img-top"
+                alt="Card 3"
+              >
+              <div class="card-body">
+                <h4>إدارة المشاريع التقنية</h4>
+                <p>
+                  مهارات التخطيط والتنظيم والقيادة لضمان تنفيذ المشاريع البرمجية بنجاح.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Counter Section Example -->
+    <section class="ftco-section ftco-counter img counter-section" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row justify-content-center" data-aos="fade-up">
+          <div class="col-md-12 text-center text-white mb-5">
+            <h2 style="color: #eee;">إحصائيات قسم علوم الحاسوب</h2>
+            <p>إنجازات وأرقام تميزنا</p>
+          </div>
+        </div>
+        <div class="row d-md-flex align-items-center justify-content-center text-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate" data-aos="fade-up" data-aos-delay="100">
+            <div class="block-18">
+              <div class="icon"><span class="flaticon-doctor"></span></div>
+              <div class="text">
+                <strong class="number" data-number="40">0</strong>
+                <span>أساتذة</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate" data-aos="fade-up" data-aos-delay="200">
+            <div class="block-18">
+              <div class="icon"><span class="flaticon-doctor"></span></div>
+              <div class="text">
+                <strong class="number" data-number="401">0</strong>
+                <span>الطلاب</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate" data-aos="fade-up" data-aos-delay="300">
+            <div class="block-18">
+              <div class="icon"><span class="flaticon-doctor"></span></div>
+              <div class="text">
+                <strong class="number" data-number="15">0</strong>
+                <span>مشاريع بحثية</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate" data-aos="fade-up" data-aos-delay="400">
+            <div class="block-18">
+              <div class="icon"><span class="flaticon-doctor"></span></div>
+              <div class="text">
+                <strong class="number" data-number="100">0</strong>
+                <span>كتب ودروس</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Four Stages Section -->
+    <section class="ftco-section bg-light stage-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-12 text-center" data-aos="fade-up">
+            <h2>المراحل الدراسية</h2>
+            <p class="lead">
+              تنقسم الخطة الدراسية إلى أربع مراحل، وفي كل مرحلة فصلين دراسيين (الكورس الأول والثاني)، 
+              إضافةً إلى قسم خاص بالمراجع والمصادر (Sources).
+            </p>
+          </div>
+        </div>
+
+        <!-- Stage 1 Card -->
+        <div class="stage-card" data-aos="zoom-in">
+          <div class="stage-card-header stage1-bg text-white">
+            <div class="overlay-header"></div>
+            <h3 class="position-relative" style="color: #eee;">المرحلة الأولى</h3>
+          </div>
+          <div class="stage-card-body">
+            <!-- Tabs for Stage 1 -->
+            <ul class="nav nav-tabs mb-3" id="stage1Tabs" role="tablist">
+              <li class="nav-item">
+                <a 
+                  class="nav-link active" 
+                  id="stage1-term1-tab" 
+                  data-toggle="tab" 
+                  href="#stage1-term1" 
+                  role="tab" 
+                  aria-controls="stage1-term1" 
+                  aria-selected="true"
+                >
+                  الفصل الأول
+                </a>
+              </li>
+              <li class="nav-item">
+                <a 
+                  class="nav-link" 
+                  id="stage1-term2-tab" 
+                  data-toggle="tab" 
+                  href="#stage1-term2" 
+                  role="tab" 
+                  aria-controls="stage1-term2" 
+                  aria-selected="false"
+                >
+                  الفصل الثاني
+                </a>
+              </li>
+              <li class="nav-item">
+                <a 
+                  class="nav-link" 
+                  id="stage1-sources-tab" 
+                  data-toggle="tab" 
+                  href="#stage1-sources" 
+                  role="tab" 
+                  aria-controls="stage1-sources" 
+                  aria-selected="false"
+                >
+                  المصادر
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content" id="stage1TabsContent">
+              <!-- Term 1 -->
+              <div 
+                class="tab-pane fade show active" 
+                id="stage1-term1" 
+                role="tabpanel" 
+                aria-labelledby="stage1-term1-tab"
+              >
+                <p>هنا قائمة بالمقررات للفصل الأول في المرحلة الأولى...</p>
+                <ul>
+                  <li>اساسيات البرمجة</li>
+                  <li>الرياضيات لعلوم الحاسوب</li>
+                  <li>اللغة الانكليزية</li>
+                  <li>ديمقراطية و حقوق الانسان</li>
+                  <li>مهارات الحاسوب</li>
+                  <li>التفكير الحاسوبي لحل المشاكل</li>
+                </ul>
+              </div>
+              <!-- Term 2 -->
+              <div 
+                class="tab-pane fade" 
+                id="stage1-term2" 
+                role="tabpanel" 
+                aria-labelledby="stage1-term2-tab"
+              >
+                <p>هنا قائمة بالمقررات للفصل الثاني في المرحلة الأولى...</p>
+                <ul>
+                  <li>اساسيات البرمجة 2</li>
+                  <li> تصميم المنطق الرقمي</li>
+                  <li>مبادئ تكنولوجيا المعلومات</li>
+                  <li>اللغة الانكليزية 2</li>
+                  <li>هياكل المتقطعة</li>
+                </ul>
+              </div>
+              <!-- Sources -->
+              <div 
+                class="tab-pane fade" 
+                id="stage1-sources" 
+                role="tabpanel" 
+                aria-labelledby="stage1-sources-tab"
+              >
+                <p>كتب ومراجع خارجية للمساعدة في المرحلة الأولى...</p>
+                <ul>
+                  <li>كتاب مدخل إلى البرمجة</li>
+                  <li>روابط لمراجع مجانية</li>
+                  <li>ملخصات الأساتذة</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Stage 1 Card -->
+
+        <!-- Stage 2 Card -->
+        <div class="stage-card" data-aos="zoom-in">
+          <div class="stage-card-header stage2-bg text-white">
+            <div class="overlay-header"></div>
+            <h3 class="position-relative" style="color: #eee;">المرحلة الثانية</h3>
+          </div>
+          <div class="stage-card-body">
+            <!-- Tabs for Stage 2 -->
+            <ul class="nav nav-tabs mb-3" id="stage2Tabs" role="tablist">
+              <li class="nav-item">
+                <a 
+                  class="nav-link active" 
+                  id="stage2-term1-tab" 
+                  data-toggle="tab" 
+                  href="#stage2-term1" 
+                  role="tab" 
+                  aria-controls="stage2-term1" 
+                  aria-selected="true"
+                >
+                  الفصل الأول
+                </a>
+              </li>
+              <li class="nav-item">
+                <a 
+                  class="nav-link" 
+                  id="stage2-term2-tab" 
+                  data-toggle="tab" 
+                  href="#stage2-term2" 
+                  role="tab" 
+                  aria-controls="stage2-term2" 
+                  aria-selected="false"
+                >
+                  الفصل الثاني
+                </a>
+              </li>
+              <li class="nav-item">
+                <a 
+                  class="nav-link" 
+                  id="stage2-sources-tab" 
+                  data-toggle="tab" 
+                  href="#stage2-sources" 
+                  role="tab" 
+                  aria-controls="stage2-sources" 
+                  aria-selected="false"
+                >
+                  المصادر
+                </a>
+              </li>
+              
+            </ul>
+            <div class="tab-content" id="stage2TabsContent">
+              <!-- Term 1 -->
+              <div 
+                class="tab-pane fade show active" 
+                id="stage2-term1" 
+                role="tabpanel" 
+                aria-labelledby="stage2-term1-tab"
+              >
+                <p>مقررات الفصل الأول للمرحلة الثانية...</p>
+                <ul>
+                  <li>هياكل البيانات و الخوارزميات 1</li>
+                  <li>البرمجة الكيانية  </li> 
+                  <li>تحليل عددي</li>
+                  <li>تحليل و تصميم الانظمة</li>
+                  <li>تنظيم و معمارية الحاسوب</li>
+                  <li>جرائم حزب البعث</li>
+                </ul>
+              </div>
+              <!-- Term 2 -->
+              <div 
+                class="tab-pane fade" 
+                id="stage2-term2" 
+                role="tabpanel" 
+                aria-labelledby="stage2-term2-tab"
+              >
+                <p>مقررات الفصل الثاني للمرحلة الثانية...</p>
+                <ul>
+                  <li>قواعد البيانات (مقدمة)</li>
+                  <li>برمجة أنظمة التشغيل</li>
+                  <li>خوارزميات أساسية</li>
+                  <li>برمجة الكيانية 2</li>
+                  <li>تصميم مواقع</li>
+                  <li>اللغة العربية</li>
+                  <li>نظرية الاحتسابية</li>
+                </ul>
+              </div>
+              <!-- Sources -->
+              <div 
+                class="tab-pane fade" 
+                id="stage2-sources" 
+                role="tabpanel" 
+                aria-labelledby="stage2-sources-tab"
+              >
+                <p>مراجع وكتب للمرحلة الثانية...</p>
+                <ul>
+                  <li>كتاب هياكل البيانات</li>
+                  <li>كتاب أنظمة التشغيل</li>
+                  <li>مراجع إلكترونية إضافية</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Stage 2 Card -->
+
+        <!-- Stage 3 Card -->
+        <div class="stage-card" data-aos="zoom-in">
+          <div class="stage-card-header stage3-bg text-white">
+            <div class="overlay-header"></div>
+            <h3 class="position-relative" style="color: #eee;">المرحلة الثالثة</h3>
+          </div>
+          <div class="stage-card-body">
+            <!-- Tabs for Stage 3 -->
+            <ul class="nav nav-tabs mb-3" id="stage3Tabs" role="tablist">
+              <li class="nav-item">
+                <a 
+                  class="nav-link active" 
+                  id="stage3-term1-tab" 
+                  data-toggle="tab" 
+                  href="#stage3-term1" 
+                  role="tab" 
+                  aria-controls="stage3-term1" 
+                  aria-selected="true"
+                >
+                  الفصل الأول
+                </a>
+              </li>
+              <li class="nav-item">
+                <a 
+                  class="nav-link" 
+                  id="stage3-term2-tab" 
+                  data-toggle="tab" 
+                  href="#stage3-term2" 
+                  role="tab" 
+                  aria-controls="stage3-term2" 
+                  aria-selected="false"
+                >
+                  الفصل الثاني
+                </a>
+              </li>
+              <li class="nav-item">
+                <a 
+                  class="nav-link" 
+                  id="stage3-sources-tab" 
+                  data-toggle="tab" 
+                  href="#stage3-sources" 
+                  role="tab" 
+                  aria-controls="stage3-sources" 
+                  aria-selected="false"
+                >
+                  المصادر
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content" id="stage3TabsContent">
+              <!-- Term 1 -->
+              <div 
+                class="tab-pane fade show active" 
+                id="stage3-term1" 
+                role="tabpanel" 
+                aria-labelledby="stage3-term1-tab"
+              >
+                <p>في الفصل الأول للمرحلة الثالثة، ستتعرض لمواد متقدمة مثل:</p>
+                <ul>
+                  <li> شبكات</li>
+                  <li>هندسة برمجيات</li>
+                  <li>مفاهيم لغات</li>
+                  <li>الذكاء الاصطناعي</li>
+                  <li>تصميم مواقع</li>
+                  <li>هياكل بيانات</li>
+                </ul>
+                <p>
+                  أدناه قائمة بالكتب والملفات المتوفرة للتنزيل:  
+                  <button class="btn btn-info" onclick="showFileList()">عرض الملفات</button>
+                   <a href="free_course.html"><button class="btn btn-info" style="background-color: rgba(0, 0, 0, 0.774);">  دورات الفصل الاول</button> </a>
+                </p>
+                
+                <!-- File List Table -->
+                <table id="fileList" class="table table-striped" style="display: none;">
+                  <thead>
+                    <tr>
+                      <th>اسم الملف</th>
+                      <th>تنزيل</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Filled by Firebase script -->
+                  </tbody>
+                </table>
+              </div>
+              <!-- Term 2 -->
+              <div 
+                class="tab-pane fade" 
+                id="stage3-term2" 
+                role="tabpanel" 
+                aria-labelledby="stage3-term2-tab"
+              >
+                <p>الفصل الثاني للمرحلة الثالثة يشمل...</p>
+                <ul>
+                  <li>المترجمات</li>
+                  <li>شبكات الحاسوب 2</li>
+                  <li> برمجة مواقع 2 </li>
+                  <li>البحوث العلمية </li>
+                  <li>اخلاقيات االحاسوب </li>
+                  <li>معمارية الحاسوب</li>
+                </ul>
+              </div>
+              <!-- Sources -->
+              <div 
+                class="tab-pane fade" 
+                id="stage3-sources" 
+                role="tabpanel" 
+                aria-labelledby="stage3-sources-tab"
+              >
+                <p>مراجع إضافية للمرحلة الثالثة...</p>
+                <ul>
+                  <li>كتاب خوارزميات متقدمة</li>
+                  <li>كتب الذكاء الاصطناعي</li>
+                  <li>محاضرات مختارة للفصول السابقة</li>
+                </ul>
+                <button class="btn btn-info" onclick="showFileList()">عرض الملفات</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Stage 3 Card -->
+
+        <!-- Stage 4 Card -->
+        <div class="stage-card" data-aos="zoom-in">
+          <div class="stage-card-header stage4-bg text-white">
+            <div class="overlay-header"></div>
+            <h3 class="position-relative" style="color: #eee;">المرحلة الرابعة</h3>
+          </div>
+          <div class="stage-card-body">
+            <!-- Tabs for Stage 4 -->
+            <ul class="nav nav-tabs mb-3" id="stage4Tabs" role="tablist">
+              <li class="nav-item">
+                <a 
+                  class="nav-link active" 
+                  id="stage4-term1-tab" 
+                  data-toggle="tab" 
+                  href="#stage4-term1" 
+                  role="tab" 
+                  aria-controls="stage4-term1" 
+                  aria-selected="true"
+                >
+                  الفصل الأول
+                </a>
+              </li>
+              <li class="nav-item">
+                <a 
+                  class="nav-link" 
+                  id="stage4-term2-tab" 
+                  data-toggle="tab" 
+                  href="#stage4-term2" 
+                  role="tab" 
+                  aria-controls="stage4-term2" 
+                  aria-selected="false"
+                >
+                  الفصل الثاني
+                </a>
+              </li>
+              <li class="nav-item">
+                <a 
+                  class="nav-link" 
+                  id="stage4-sources-tab" 
+                  data-toggle="tab" 
+                  href="#stage4-sources" 
+                  role="tab" 
+                  aria-controls="stage4-sources" 
+                  aria-selected="false"
+                >
+                  المصادر
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content" id="stage4TabsContent">
+              <!-- Term 1 -->
+              <div 
+                class="tab-pane fade show active" 
+                id="stage4-term1" 
+                role="tabpanel" 
+                aria-labelledby="stage4-term1-tab"
+              >
+                <p>مقررات الفصل الأول للمرحلة الرابعة...</p>
+                <ul>
+                  <li>تنقيب بيانات</li>
+                  <li>مشروع التخرج </li>
+                  <li>انظمة التشغيل</li>
+                  <li>الرؤية بالحاسوب</li>
+                  <li>الحوسبة السحابية</li>
+                  <li>تطبيقات النقال </li>
+                  <li>ذكاء الحاسوبي</li>
+                </ul>
+              </div>
+              <!-- Term 2 -->
+              <div 
+                class="tab-pane fade" 
+                id="stage4-term2" 
+                role="tabpanel" 
+                aria-labelledby="stage4-term2-tab"
+              >
+                <p>مقررات الفصل الثاني للمرحلة الرابعة...</p>
+                <ul>
+                  <li>امنية الحاسوب</li>
+                  <li>مواضيع مختارة</li>
+                  <li>تفاعل الانسان مع الحاسوب</li>
+                  <li>محاكاة بالحاسوب</li>
+                  <li>مهارات الاتصال </li>
+                  <li>هندسة المعرفة</li>
+                </ul>
+              </div>
+              <!-- Sources -->
+              <div 
+                class="tab-pane fade" 
+                id="stage4-sources" 
+                role="tabpanel" 
+                aria-labelledby="stage4-sources-tab"
+              >
+                <p>مراجع عامة للمرحلة الرابعة...</p>
+                <ul>
+                  <li>أبحاث ومجلات علمية</li>
+                  <li>دروس مرئية وورش عمل</li>
+                  <li>مكتبات وأدوات برمجية</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Stage 4 Card -->
+      </div>
+    </section>
+    <!-- End Four Stages Section -->
+
+    <!-- Footer -->
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5">
+              <h2 class="ftco-heading-2">هل لديك أسئلة؟</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li>
+                    <span class="icon icon-map-marker"></span>
+                    <span class="text">
+                      كرمة  . كلية علوم الحاسوب و تكنولوجيا المعلومات , حامعة البصرة  , البصرة, العراق
+                    </span>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="icon icon-phone"></span>
+                      <span class="text">07801917387</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="icon icon-envelope"></span>
+                      <span class="text">mohammeninja@gmail.com</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+         
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5 ml-md-4">
+              <h2 class="ftco-heading-2">روابط</h2>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#">
+                    <span class="ion-ios-arrow-round-forward mr-2"></span>Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="ion-ios-arrow-round-forward mr-2"></span>About
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="ion-ios-arrow-round-forward mr-2"></span>Services
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="ion-ios-arrow-round-forward mr-2"></span>Departments
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="ion-ios-arrow-round-forward mr-2"></span>Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5">
+           
+              <form action="#" class="subscribe-form">
+                <div class="form-group">
+                  <input 
+                    type="text"
+                    class="form-control mb-2 text-center" 
+                    placeholder="أدخل بريدك الإلكتروني"
+                  >
+                  <input 
+                    type="submit" 
+                    value="اشترك" 
+                    class="form-control submit px-3"
+                  >
+                </div>
+              </form>
+            </div>
+            <div class="ftco-footer-widget mb-5">
+              <h2 class="ftco-heading-2 mb-0">تواصل معنا</h2>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                <li class="ftco-animate">
+                  <a href="#"><span class="icon-twitter"></span></a>
+                </li>
+                <li class="ftco-animate">
+                  <a href="#"><span class="icon-facebook"></span></a>
+                </li>
+                <li class="ftco-animate">
+                  <a href="www.instgram.com/pzx0z"><span class="icon-instagram"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>
+              Copyright &copy;
+              <script>document.write(new Date().getFullYear());</script> 
+              All rights reserved | This website is made with 
+              <i class="icon-heart" aria-hidden="true"></i> 
+              by <a href="https://colorlib.com" target="_blank">computer science </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END Footer -->
+
+    <!-- Firebase Script: Only needed on Stage 3 / Term 1, but we can load globally -->
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js";
+      import { getStorage, ref, listAll, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-storage.js";
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+          apiKey: "AIzaSyCs4aZJFYrsKVFseNa7b_GjmWycS82oDKY",
+          authDomain: "minhaj-52d39.firebaseapp.com",
+          projectId: "minhaj-52d39",
+          storageBucket: "minhaj-52d39.appspot.com",
+          messagingSenderId: "514007727638",
+          appId: "1:514007727638:web:58ad960bae3ba8757dff37"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const storage = getStorage(app);
+
+      // Function to list files
+      async function listFiles() {
+          const listRef = ref(storage, 'uploads/');
+          const res = await listAll(listRef);
+          const fileList = document.getElementById("fileList").getElementsByTagName("tbody")[0];
+          fileList.innerHTML = ''; // Clear previous file list
+          
+          res.items.forEach((itemRef) => {
+              const fileName = itemRef.name;
+              const row = document.createElement("tr");
+              row.innerHTML = `
+                <td>${fileName}</td>
+                <td>
+                  <a href="#" onclick="downloadFile('${fileName}')">تنزيل</a>
+                </td>
+              `;
+              fileList.appendChild(row);
+          });
+
+          document.getElementById("fileList").style.display = 'table'; // Show the table
+      }
+
+      // Function to download file
+      window.downloadFile = async function(fileName) {
+          const fileRef = ref(storage, 'uploads/' + fileName);
+          const url = await getDownloadURL(fileRef);
+          window.open(url, '_blank'); // Open the download in a new tab
+      };
+
+      // Show file list for the specified course
+      window.showFileList = async function() {
+          const fileTable = document.getElementById("fileList");
+          fileTable.style.display = 'none'; // Hide the table initially
+          await listFiles(); // Fetch the files
+      };
+    </script>
+
+    <!-- JS Files (jQuery, Bootstrap, etc.) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script 
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"
+    ></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- AOS Initialization (if used) -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // animation duration in ms
+        once: true,     // whether animation should happen only once
+      });
+    </script>
+
+    <!-- Counter Script -->
+    <script>
+      // Animate the counters on scroll
+      $(document).ready(function() {
+        let counterElements = document.querySelectorAll('.number');
+        let counterStarted = false; // To ensure it only animates once
+
+        function startCounters() {
+          if (counterStarted) return;
+          counterStarted = true;
+
+          counterElements.forEach(el => {
+            let endValue = parseInt(el.getAttribute('data-number'));
+            $(el).animateNumber({ number: endValue }, 2000);
+          });
+        }
+
+        // Trigger counters when the element is in view
+        $(window).on('scroll', function() {
+          let countersOffset = $('.counter-wrap').offset().top - window.innerHeight;
+          if ($(window).scrollTop() > countersOffset) {
+            startCounters();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <title>منهاج | Chatbot</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- نفس الروابط والملفات الخاصة بالتصميم كما في كودك الأصلي -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      href="https://code.jquery.com/ui/1.12.1/themes/ui-lightness/jquery-ui.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+    ></script>
+
+    <style>
+      /* تنسيقات الواجهة للمحادثة */
+      .chat-container {
+        background-color: #f8f9fa;
+        padding: 2rem;
+        border-radius: 8px;
+        max-width: 800px;
+        margin: 2rem auto;
+      }
+      .chat-header {
+        text-align: center;
+        margin-bottom: 1.5rem;
+      }
+      .chat-header h2 {
+        font-weight: 600;
+      }
+      .chat-box {
+        height: 400px;
+        overflow-y: auto;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 1rem;
+        background: #fff;
+      }
+      .chat-message {
+        margin-bottom: 1rem;
+      }
+      .chat-message.user {
+        text-align: right;
+      }
+      .chat-message.bot {
+        text-align: left;
+      }
+      .chat-message .content {
+        display: inline-block;
+        padding: 10px 15px;
+        border-radius: 15px;
+        max-width: 60%;
+      }
+      .chat-message.user .content {
+        background: #007bff;
+        color: #fff;
+      }
+      .chat-message.bot .content {
+        background: #ebebeb;
+      }
+      .chat-input {
+        margin-top: 1rem;
+        display: flex;
+        gap: 0.5rem;
+      }
+      .chat-input input {
+        flex: 1;
+        padding: 0.75rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+      .chat-input button {
+        padding: 0.75rem 1.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- القسم العلوي (header) كما في الكود الأصلي -->
+    <div class="bg-top navbar-light">
+      <div class="container">
+        <div class="row no-gutters d-flex align-items-center align-items-stretch">
+          <div class="col-md-4 d-flex align-items-center py-4">
+            <img
+              src="cropped_image.png"
+              alt="شعار"
+              width="40"
+              height="40"
+              class="d-inline-block align-text-top"
+            />
+            <a class="navbar-brand" href="index.html"
+              >منهاج<span> منصة تعليمية</span></a
+            >
+          </div>
+          <div class="col-lg-8 d-block">
+            <div class="row d-flex">
+              <div
+                class="col-md d-flex topper align-items-center align-items-stretch py-md-4"
+              >
+                <div
+                  class="icon d-flex justify-content-center align-items-center"
+                >
+                  <span class="icon-paper-plane"></span>
+                </div>
+                <div class="text">
+                  <span>البريد الإلكتروني</span>
+                  <span>mohammeninja@gmail.com</span>
+                </div>
+              </div>
+              <div
+                class="col-md d-flex topper align-items-center align-items-stretch py-md-4"
+              >
+                <div
+                  class="icon d-flex justify-content-center align-items-center"
+                >
+                  <span class="icon-phone2"></span>
+                </div>
+                <div class="text">
+                  <span>اتصل بنا</span>
+                  <span>07801917387</span>
+                </div>
+              </div>
+              <div class="col-md topper d-flex align-items-center justify-content-end">
+                <p class="mb-0">
+                  <a
+                    href="cm.html"
+                    class="btn py-2 px-3 btn-primary d-flex align-items-center justify-content-center"
+                  >
+                    <span>سجل الآن</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- قائمة التنقل (navbar) مع تمييز صفحة "المحادثة الذكية" -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light"
+      id="ftco-navbar"
+    >
+      <div class="container d-flex align-items-center px-4">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="oi oi-menu"></span> القائمة
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">عن المنصة</a>
+            </li>
+            <li class="nav-item">
+              <a href="courses.html" class="nav-link">الدورات</a>
+            </li>
+            <li class="nav-item">
+              <a href="teacher.html" class="nav-link">المعلمين</a>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">المدونة</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">اتصل بنا</a>
+            </li>
+            <li class="nav-item active">
+              <a href="chatbot.html" class="nav-link">المحادثة الذكية</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- قسم المحادثة الذكية -->
+    <section class="ftco-section">
+      <div class="container chat-container ftco-animate">
+        <div class="chat-header">
+          <h2>المحادثة الذكية (Computer Science Focus)</h2>
+          <p>اسأل الذكاء الاصطناعي عن أي موضوع في علوم الحاسوب</p>
+        </div>
+        <div class="chat-box" id="chat-box">
+          <!-- سيتم وضع الرسائل ديناميكياً هنا -->
+        </div>
+        <div class="chat-input">
+          <input
+            type="text"
+            id="user-input"
+            placeholder="اكتب سؤالك هنا..."
+          />
+      <button class="btn btn-primary" id="send-btn">إرسال</button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- الفوتر (نفس كودك الأصلي) -->
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <!-- محتوى الفوتر المعتاد -->
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>
+              Copyright &copy;
+              <script>document.write(new Date().getFullYear());</script>
+              All rights reserved | This template is made with
+              <i class="icon-heart" aria-hidden="true"></i>
+              by
+              <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle
+          class="path-bg"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke="#eeeeee"
+        />
+        <circle
+          class="path"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke-miterlimit="10"
+          stroke="#F96D00"
+        />
+      </svg>
+    </div>
+
+    <!-- سكربتات الواجهة -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- سكربت المحادثة باستخدام مكتبة GoogleGenerativeAI -->
+    <!-- ملاحظة: هذه الطريقة تتطلب وجود باقة @google/generative-ai على هيئة Module.
+         إذا كنت ترغب في تشغيلها على السيرفر (Node.js)، انقل الجزء أدناه إلى ملف .js في السيرفر. -->
+    <script type="module">
+      import { GoogleGenerativeAI } from "https://unpkg.com/@google/generative-ai/dist/index.js";
+
+      // استبدل هذا المفتاح بمفتاحك الخاص
+      const genAI = new GoogleGenerativeAI("AIzaSyDUNwf4yoF-zGVzilinK2uMggaOGeMrH68");
+      const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+
+      // تخزين تاريخ المحادثة
+      let conversationHistory = [];
+
+      // دالة عرض الرسائل في واجهة الدردشة
+      function displayMessage(sender, text) {
+        const chatBox = document.getElementById("chat-box");
+        if (!chatBox) {
+          console.error("Chat box element not found.");
+          return;
+        }
+        const messageDiv = document.createElement("div");
+        messageDiv.classList.add("chat-message", sender);
+        messageDiv.innerHTML = `
+          <div class="content">${text}</div>
+        `;
+        chatBox.appendChild(messageDiv);
+        // التمرير التلقائي للأسفل
+        chatBox.scrollTop = chatBox.scrollHeight;
+      }
+
+      // دالة الإرسال
+      async function sendMessage() {
+        const userInput = document.getElementById("user-input");
+        if (!userInput) {
+          console.error("User input element not found.");
+          return;
+        }
+        const userText = userInput.value.trim();
+        if (!userText) return;
+
+        // عرض رسالة المستخدم
+        displayMessage("user", userText);
+        userInput.value = "";
+
+        // تخزين رسالة المستخدم
+        conversationHistory.push({ role: "user", text: userText });
+
+        try {
+          // نقوم هنا ببناء نص يجمع سياق المحادثة السابقة (اختياري حسب الحاجة)
+          // كمثال بسيط، سنجمع جميع الرسائل في نص واحد:
+          const conversationContext = conversationHistory
+            .map((msg) => (msg.role === "user" ? `User: ${msg.text}` : `Assistant: ${msg.text}`))
+            .join("\n");
+
+          // نحصل على رد من النموذج استناداً إلى المحادثة
+          // يمكنك تمرير conversationContext كامل إذا أردت أن يتذكر المحادثات السابقة
+          // أو يمكنك تجربة userText فقط
+          const response = await model.generateContent(conversationContext + "\nAssistant:");
+
+          // رد النموذج على شكل نص
+          const botReply = response.response.text();
+
+          // خزن رد المساعد
+          conversationHistory.push({ role: "assistant", text: botReply });
+
+          // اعرض الرد
+          displayMessage("bot", botReply);
+        } catch (error) {
+          console.error("Error:", error);
+          displayMessage("bot", "حدث خطأ في الاتصال بالخادم. حاول مرة أخرى لاحقاً.");
+        }
+      }
+
+      // الاستماع إلى زر Enter
+      document.addEventListener("DOMContentLoaded", () => {
+  const userInput = document.getElementById("user-input");
+  const sendBtn = document.getElementById("send-btn"); // 1) الحصول على الزر
+  
+  if (userInput) {
+    userInput.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        sendMessage();
+      }
+    });
+  }
+
+  // 2) ربط الزر بدالة sendMessage
+  if (sendBtn) {
+    sendBtn.addEventListener("click", sendMessage);
+  }
+});
+
+    </script>
+  </body>
+</html>

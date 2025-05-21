@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <title>قسم النظم الطبية الذكية | منهاج</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fonts & Icon Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    >
+
+    <!-- Template CSS Files -->
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap (if not already included) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- AOS (Animate On Scroll) library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+    <style>
+      /* RTL adjustments */
+      body {
+        text-align: right;
+      }
+      .nav-tabs .nav-item .nav-link {
+        margin-right: 0;
+        margin-left: 3px;
+      }
+      .breadcrumb-item + .breadcrumb-item::before {
+        content: "›";
+      }
+
+      /* Hero image styling for IMS page */
+      .hero-wrap-2 {
+        background: url("images/ims_hero.jpg") no-repeat center center/cover;
+      }
+
+      /* Highlight Section for Intelligent Medical Systems */
+      .ims-highlight {
+        position: relative;
+        overflow: hidden;
+        padding: 60px 15px;
+        background-color: #f8f9fa;
+      }
+      .ims-highlight .ims-bg {
+        position: absolute;
+        top: -50px;
+        right: -50px;
+        z-index: 1;
+        opacity: 0.2;
+      }
+      .ims-highlight .ims-bg-left {
+        left: -50px;
+        right: auto;
+      }
+      .ims-highlight .img-fluid {
+        max-width: 400px;
+        border-radius: 10px;
+        box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+      }
+      .ims-highlight .content-area {
+        z-index: 2;
+        position: relative;
+      }
+
+      /* Additional animations for images on hover */
+      .img-hover-zoom {
+        overflow: hidden;
+      }
+      .img-hover-zoom img {
+        transition: transform 0.5s ease;
+      }
+      .img-hover-zoom:hover img {
+        transform: scale(1.08);
+      }
+
+      /* Example card styling for courses or sections */
+      .sec-card {
+        border-radius: 12px;
+        margin-bottom: 30px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        transition: box-shadow 0.3s;
+      }
+      .sec-card:hover {
+        box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      }
+      .sec-card img {
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+      }
+      .sec-card .card-body h4 {
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+      }
+
+      /* Counter section styling */
+      .ftco-counter .overlay {
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+      /* ============ Four Stages Section Styles ============ */
+      .stage-section .stage-card {
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 40px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      }
+      .stage-section .stage-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+      }
+      .stage-section .stage-card-header {
+        position: relative;
+        padding: 30px 20px;
+        color: #fff;
+        border-bottom: 1px solid #eee;
+      }
+      .stage-section .stage-card-header h3 {
+        margin-bottom: 0;
+        font-size: 24px;
+      }
+      .stage-section .stage-card-header .overlay-header {
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        background: rgba(0, 0, 0, 0.4);
+      }
+      /* Example different backgrounds for each stage header image */
+      .stage1-bg {
+        background: url('images/ims_stage1_bg.jpg') no-repeat center center;
+        background-size: cover;
+      }
+      .stage2-bg {
+        background: url('images/ims_stage2_bg.jpg') no-repeat center center;
+        background-size: cover;
+      }
+      .stage3-bg {
+        background: url('images/ims_stage3_bg.jpg') no-repeat center center;
+        background-size: cover;
+      }
+      .stage4-bg {
+        background: url('images/ims_stage4_bg.jpg') no-repeat center center;
+        background-size: cover;
+      }
+      .nav-tabs .nav-link {
+        color: #555;
+        border-radius: 0;
+      }
+      .nav-tabs .nav-link.active {
+        color: #fff;
+        background-color: #f96d00;
+        border-color: #f96d00;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Top Bar -->
+    <div class="bg-top navbar-light">
+      <div class="container">
+        <div class="row no-gutters d-flex align-items-center align-items-stretch">
+          <div class="col-md-4 d-flex align-items-center py-4">
+            <img 
+              src="cropped_image.png" 
+              alt="شعار" width="40" height="40"
+              class="d-inline-block align-text-top"
+            >
+            <a class="navbar-brand" href="index.html">
+              منهاج<span> منصة تعليمية</span>
+            </a>
+          </div>
+          <div class="col-lg-8 d-block">
+            <div class="row d-flex">
+              <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+                <div class="icon d-flex justify-content-center align-items-center">
+                  <span class="icon-paper-plane"></span>
+                </div>
+                <div class="text">
+                  <span>البريد الإلكتروني</span>
+                  <span>mohammeninja@gmail.com</span>
+                </div>
+              </div>
+              <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+                <div class="icon d-flex justify-content-center align-items-center">
+                  <span class="icon-phone2"></span>
+                </div>
+                <div class="text">
+                  <span>اتصل بنا</span>
+                  <span>07801917387</span>
+                </div>
+              </div>
+              <div class="col-md topper d-flex align-items-center justify-content-end">
+                <p class="mb-0">
+                  <a 
+                    href="cm.html" 
+                    class="btn py-2 px-3 btn-primary d-flex align-items-center justify-content-center"
+                  >
+                    <span>سجل الآن</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container d-flex align-items-center px-4">
+        <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#ftco-nav" 
+          aria-controls="ftco-nav" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation"
+        >
+          <span class="oi oi-menu"></span> القائمة
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link">الرئيسية</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">عن المنصة</a></li>
+            <li class="nav-item"><a href="courses.html" class="nav-link">الدورات</a></li>
+            <li class="nav-item"><a href="teacher.html" class="nav-link">المعلمين</a></li>
+            <li class="nav-item"><a href="blog.html" class="nav-link">المدونة</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+            <!-- Highlight the 'IMS Department' in the menu -->
+            <li class="nav-item active">
+              <a href="ims-department.html" class="nav-link">
+                قسم النظم الطبية الذكية
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+
+    <!-- Hero / Header Section -->
+    <section 
+      class="hero-wrap hero-wrap-2"
+      data-stellar-background-ratio="0.5"
+    >
+      <div class="overlay"></div>
+      <div class="container">
+        <div 
+          class="row no-gutters slider-text align-items-center justify-content-center"
+        >
+          <div class="col-md-9 text-center">
+            <h1 class="mb-2 bread" data-aos="fade-down">قسم النظم الطبية الذكية</h1>
+            <p class="breadcrumbs" data-aos="fade-up" data-aos-delay="100">
+              <span class="mr-2">
+                <a href="index.html">الرئيسية 
+                  <i class="ion-ios-arrow-forward"></i>
+                </a>
+              </span> 
+              <span>النظم الطبية الذكية 
+                <i class="ion-ios-arrow-forward"></i>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMS Highlight Section -->
+    <section class="ims-highlight">
+      <!-- floating/overlay images for style -->
+      <img 
+        src="images/ims_overlay.png" 
+        alt="IMS Overlay" 
+        class="ims-bg ims-bg-left" 
+        width="300"
+        data-aos="fade-right"
+      >
+      <img 
+        src="images/ims_overlay2.png" 
+        alt="IMS Overlay" 
+        class="ims-bg" 
+        width="300"
+        data-aos="fade-left"
+      >
+      <div class="container content-area" data-aos="fade-up">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-3 img-hover-zoom">
+            <img
+              src="images/ims_lab.jpg"
+              alt="مختبر النظم الطبية الذكية"
+              class="img-fluid"
+            >
+          </div>
+          <div class="col-md-6">
+            <h2>لماذا دراسة النظم الطبية الذكية؟</h2>
+            <p class="lead">
+              النظم الطبية الذكية تجمع بين تقنيات الذكاء الاصطناعي والطب؛ 
+              لتطوير حلول تساعد في التشخيص المبكر وتقديم رعاية صحية محسّنة للمرضى.
+            </p>
+            <p>
+              يهتم هذا القسم بإنشاء وتطوير نظم دعم القرارات الطبية، 
+              تحليل البيانات الطبية الضخمة، وبناء خوارزميات للتعرف على الأمراض باستخدام الصور والبيانات السريرية.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Another Info Section with more images -->
+    <section class="ftco-section">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-6 img-hover-zoom mb-4">
+            <img 
+              src="images/ims_infrastructure.jpg"
+              alt="البنية التحتية للنظم الطبية الذكية"
+              class="img-fluid"
+            >
+          </div>
+          <div class="col-md-6">
+            <h3>البنية التحتية للنظم الطبية الذكية</h3>
+            <p>
+              يشمل هذا المجال بنية تحتية متكاملة من الأجهزة الطبية، 
+              قواعد البيانات الصحية، وتطبيقات الذكاء الاصطناعي 
+              التي تساهم في تحسين التشخيص وتسريع عمليات المعالجة.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Some cards (subjects or quick info) -->
+    <section class="ftco-section bg-light">
+      <div class="container" data-aos="fade-left">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card sec-card">
+              <img 
+                src="images/ims_card1.jpg" 
+                class="card-img-top"
+                alt="Card 1"
+              >
+              <div class="card-body">
+                <h4>تحليل الصور الطبية</h4>
+                <p>
+                  استخدام خوارزميات متقدمة للتعرف على الأنماط وتشخيص الأمراض بالصور الإشعاعية والمخبرية.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card sec-card">
+              <img 
+                src="images/ims_card2.jpg" 
+                class="card-img-top"
+                alt="Card 2"
+              >
+              <div class="card-body">
+                <h4>إدارة قواعد البيانات الصحية</h4>
+                <p>
+                  بناء قواعد بيانات طبية ضخمة، تأمينها وتحليلها للحصول على رؤى تساعد على تحسين الخدمات الصحية.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card sec-card">
+              <img 
+                src="images/ims_card3.jpg" 
+                class="card-img-top"
+                alt="Card 3"
+              >
+              <div class="card-body">
+                <h4>نظم دعم القرار الطبي</h4>
+                <p>
+                  خوارزميات الذكاء الاصطناعي تساهم في تقديم التوصيات العلاجية ومساعدة الأطباء في تحديد الخطة المناسبة.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Animated Counter Section -->
+    <section class="ftco-section ftco-counter img" data-stellar-background-ratio="0.5" style="background-image: url('images/ims_bg_count.jpg');">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row justify-content-center" data-aos="fade-up">
+          <div class="col-md-8 text-center text-white mb-5">
+            <h2>إحصائيات قسم النظم الطبية الذكية</h2>
+            <p>إنجازات وأرقام تميزنا</p>
+          </div>
+        </div>
+        <div class="row d-md-flex align-items-center justify-content-center text-center">
+          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate" data-aos="fade-up" data-aos-delay="100">
+            <div class="block-18" style="background: rgba(255,255,255,0.8); padding: 20px; border-radius: 8px;">
+              <div class="icon"><span class="ion-ios-medkit"></span></div>
+              <div class="text">
+                <strong class="number" data-number="35">0</strong>
+                <span>أطباء وأساتذة</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate" data-aos="fade-up" data-aos-delay="200">
+            <div class="block-18" style="background: rgba(255,255,255,0.8); padding: 20px; border-radius: 8px;">
+              <div class="icon"><span class="ion-ios-person"></span></div>
+              <div class="text">
+                <strong class="number" data-number="320">0</strong>
+                <span>طلاب حاليًا</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate" data-aos="fade-up" data-aos-delay="300">
+            <div class="block-18" style="background: rgba(255,255,255,0.8); padding: 20px; border-radius: 8px;">
+              <div class="icon"><span class="ion-ios-briefcase"></span></div>
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>مشاريع تخرج متميزة</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate" data-aos="fade-up" data-aos-delay="400">
+            <div class="block-18" style="background: rgba(255,255,255,0.8); padding: 20px; border-radius: 8px;">
+              <div class="icon"><span class="ion-ios-paperplane"></span></div>
+              <div class="text">
+                <strong class="number" data-number="95">0</strong>
+                <span>أبحاث علمية</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Four Stages Section -->
+    <section class="ftco-section bg-light stage-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-12 text-center" data-aos="fade-up">
+            <h2>المراحل الدراسية</h2>
+            <p class="lead">
+              ينقسم البرنامج الدراسي إلى أربع مراحل، في كل مرحلة فصلان دراسيان، مع قسم خاص بالمراجع والمصادر.
+            </p>
+          </div>
+        </div>
+
+        <!-- Stage 1 Card -->
+        <div class="stage-card" data-aos="zoom-in">
+          <div class="stage-card-header stage1-bg text-white">
+            <div class="overlay-header"></div>
+            <h3 class="position-relative">المرحلة الأولى</h3>
+          </div>
+          <div class="stage-card-body">
+            <!-- Tabs for Stage 1 -->
+            <ul class="nav nav-tabs mb-3" id="stage1Tabs" role="tablist">
+              <li class="nav-item">
+                <a 
+                  class="nav-link active" 
+                  id="stage1-term1-tab" 
+                  data-toggle="tab" 
+                  href="#stage1-term1" 
+                  role="tab" 
+                  aria-controls="stage1-term1" 
+                  aria-selected="true"
+                >
+                  الفصل الأول
+                </a>
+              </li>
+              <li class="nav-item">
+                <a 
+                  class="nav-link" 
+                  id="stage1-term2-tab" 
+                  data-toggle="tab" 
+                  href="#stage1-term2" 
+                  role="tab" 
+                  aria-controls="stage1-term2" 
+                  aria-selected="false"
+                >
+                  الفصل الثاني
+                </a>
+              </li>
+              <li class="nav-item">
+                <a 
+                  class="nav-link" 
+                  id="stage1-sources-tab" 
+                  data-toggle="tab" 
+                  href="#stage1-sources" 
+                  role="tab" 
+                  aria-controls="stage1-sources" 
+                  aria-selected="false"
+                >
+                  المصادر
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content" id="stage1TabsContent">
+              <!-- Term 1 -->
+              <div 
+                class="tab-pane fade show active" 
+                id="stage1-term1" 
+                role="tabpanel" 
+                aria-labelledby="stage1-term1-tab"
+              >
+                <p>في الفصل الأول للمرحلة الأولى، تشمل المقررات:</p>
+                <ul>
+                  <li>مبادئ الحاسوب</li>
+                  <li>مبادئ الأحياء الطبية</li>
+                  <li>مبادئ البرمجة</li>
+                </ul>
+              </div>
+              <!-- Term 2 -->
+              <div 
+                class="tab-pane fade" 
+                id="stage1-term2" 
+                role="tabpanel" 
+                aria-labelledby="stage1-term2-tab"
+              >
+                <p>الفصل الثاني يتناول:</p>
+                <ul>
+                  <li>إحصاء طبي تمهيدي</li>
+                  <li>مدخل إلى الذكاء الاصطناعي</li>
+                  <li>مقدمة في قواعد البيانات</li>
+                </ul>
+              </div>
+              <!-- Sources -->
+              <div 
+                class="tab-pane fade" 
+                id="stage1-sources" 
+                role="tabpanel" 
+                aria-labelledby="stage1-sources-tab"
+              >
+                <p>مراجع للمرحلة الأولى...</p>
+                <ul>
+                  <li>كتاب أساسيات الحاسوب</li>
+                  <li>مراجع الأحياء الطبية للمبتدئين</li>
+                  <li>ملخصات الأساتذة</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Stage 1 Card -->
+
+        <!-- Stage 2 Card -->
+        <div class="stage-card" data-aos="zoom-in">
+          <div class="stage-card-header stage2-bg text-white">
+            <div class="overlay-header"></div>
+            <h3 class="position-relative">المرحلة الثانية</h3>
+          </div>
+          <div class="stage-card-body">
+            <!-- Tabs for Stage 2 -->
+            <ul class="nav nav-tabs mb-3" id="stage2Tabs" role="tablist">
+              <li class="nav-item">
+                <a 
+                  class="nav-link active" 
+                  id="stage2-term1-tab" 
+                  data-toggle="tab" 
+                  href="#stage2-term1" 
+                  role="tab" 
+                  aria-controls="stage2-term1" 
+                  aria-selected="true"
+                >
+                  الفصل الأول
+                </a>
+              </li>
+              <li class="nav-item">
+                <a 
+                  class="nav-link" 
+                  id="stage2-term2-tab" 
+                  data-toggle="tab" 
+                  href="#stage2-term2" 
+                  role="tab" 
+                  aria-controls="stage2-term2" 
+                  aria-selected="false"
+                >
+                  الفصل الثاني
+                </a>
+              </li>
+              <li class="nav-item">
+                <a 
+                  class="nav-link" 
+                  id="stage2-sources-tab" 
+                  data-toggle="tab" 
+                  href="#stage2-sources" 
+                  role="tab" 
+                  aria-controls="stage2-sources" 
+                  aria-selected="false"
+                >
+                  المصادر
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content" id="stage2TabsContent">
+              <!-- Term 1 -->
+              <div 
+                class="tab-pane fade show active" 
+                id="stage2-term1" 
+                role="tabpanel" 
+                aria-labelledby="stage2-term1-tab"
+              >
+                <p>في الفصل الأول للمرحلة الثانية، ستتعرف على...</p>
+                <ul>
+                  <li>تقنيات التحليل الحيوي</li>
+                  <li>مبادئ الأمن السيبراني الصحي</li>
+                  <li>تشغيل وصيانة الأجهزة الطبية</li>
+                </ul>
+              </div>
+              <!-- Term 2 -->
+              <div 
+                class="tab-pane fade" 
+                id="stage2-term2" 
+                role="tabpanel" 
+                aria-labelledby="stage2-term2-tab"
+              >
+                <p>الفصل الثاني يركز على...</p>
+                <ul>
+                  <li>إدارة قواعد البيانات الصحية</li>
+                  <li>إحصاء طبي متقدم</li>
+                  <li>مبادئ النمذجة الرياضية</li>
+                </ul>
+              </div>
+              <!-- Sources -->
+              <div 
+                class="tab-pane fade" 
+                id="stage2-sources" 
+                role="tabpanel" 
+                aria-labelledby="stage2-sources-tab"
+              >
+                <p>مراجع للمرحلة الثانية...</p>
+                <ul>
+                  <li>كتاب إدارة قواعد البيانات الصحية</li>
+                  <li>مراجع الأمن السيبراني الطبي</li>
+                  <li>محاضرات علم الإحصاء الطبي</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Stage 2 Card -->
+
+        <!-- Stage 3 Card -->
+        <div class="stage-card" data-aos="zoom-in">
+          <div class="stage-card-header stage3-bg text-white">
+            <div class="overlay-header"></div>
+            <h3 class="position-relative">المرحلة الثالثة</h3>
+          </div>
+          <div class="stage-card-body">
+            <!-- Tabs for Stage 3 -->
+            <ul class="nav nav-tabs mb-3" id="stage3Tabs" role="tablist">
+              <li class="nav-item">
+                <a 
+                  class="nav-link active" 
+                  id="stage3-term1-tab" 
+                  data-toggle="tab" 
+                  href="#stage3-term1" 
+                  role="tab" 
+                  aria-controls="stage3-term1" 
+                  aria-selected="true"
+                >
+                  الفصل الأول
+                </a>
+              </li>
+              <li class="nav-item">
+                <a 
+                  class="nav-link" 
+                  id="stage3-term2-tab" 
+                  data-toggle="tab" 
+                  href="#stage3-term2" 
+                  role="tab" 
+                  aria-controls="stage3-term2" 
+                  aria-selected="false"
+                >
+                  الفصل الثاني
+                </a>
+              </li>
+              <li class="nav-item">
+                <a 
+                  class="nav-link" 
+                  id="stage3-sources-tab" 
+                  data-toggle="tab" 
+                  href="#stage3-sources" 
+                  role="tab" 
+                  aria-controls="stage3-sources" 
+                  aria-selected="false"
+                >
+                  المصادر
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content" id="stage3TabsContent">
+              <!-- Term 1 -->
+              <div 
+                class="tab-pane fade show active" 
+                id="stage3-term1" 
+                role="tabpanel" 
+                aria-labelledby="stage3-term1-tab"
+              >
+                <p>في الفصل الأول للمرحلة الثالثة، يتم التعمق في...</p>
+                <ul>
+                  <li>خوارزميات تعلم الآلة الطبية</li>
+                  <li>تصميم واجهات ذكية للتشخيص</li>
+                  <li>تحليل البيانات الحيوية المتقدمة</li>
+                </ul>
+              </div>
+              <!-- Term 2 -->
+              <div 
+                class="tab-pane fade" 
+                id="stage3-term2" 
+                role="tabpanel" 
+                aria-labelledby="stage3-term2-tab"
+              >
+                <p>في الفصل الثاني نتعرف على...</p>
+                <ul>
+                  <li>نظم دعم القرار الطبي (CDSS)</li>
+                  <li>مقدمة في معالجة الصور الطبية</li>
+                  <li>سلامة الأجهزة والتطبيقات الذكية</li>
+                </ul>
+              </div>
+              <!-- Sources -->
+              <div 
+                class="tab-pane fade" 
+                id="stage3-sources" 
+                role="tabpanel" 
+                aria-labelledby="stage3-sources-tab"
+              >
+                <p>مراجع إضافية للمرحلة الثالثة...</p>
+                <ul>
+                  <li>كتاب تعلم الآلة الطبي</li>
+                  <li>مراجع تصميم واجهات المستخدم الذكية</li>
+                  <li>أبحاث علمية في تحليل البيانات الحيوية</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Stage 3 Card -->
+
+        <!-- Stage 4 Card -->
+        <div class="stage-card" data-aos="zoom-in">
+          <div class="stage-card-header stage4-bg text-white">
+            <div class="overlay-header"></div>
+            <h3 class="position-relative">المرحلة الرابعة</h3>
+          </div>
+          <div class="stage-card-body">
+            <!-- Tabs for Stage 4 -->
+            <ul class="nav nav-tabs mb-3" id="stage4Tabs" role="tablist">
+              <li class="nav-item">
+                <a 
+                  class="nav-link active" 
+                  id="stage4-term1-tab" 
+                  data-toggle="tab" 
+                  href="#stage4-term1" 
+                  role="tab" 
+                  aria-controls="stage4-term1" 
+                  aria-selected="true"
+                >
+                  الفصل الأول
+                </a>
+              </li>
+              <li class="nav-item">
+                <a 
+                  class="nav-link" 
+                  id="stage4-term2-tab" 
+                  data-toggle="tab" 
+                  href="#stage4-term2" 
+                  role="tab" 
+                  aria-controls="stage4-term2" 
+                  aria-selected="false"
+                >
+                  الفصل الثاني
+                </a>
+              </li>
+              <li class="nav-item">
+                <a 
+                  class="nav-link" 
+                  id="stage4-sources-tab" 
+                  data-toggle="tab" 
+                  href="#stage4-sources" 
+                  role="tab" 
+                  aria-controls="stage4-sources" 
+                  aria-selected="false"
+                >
+                  المصادر
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content" id="stage4TabsContent">
+              <!-- Term 1 -->
+              <div 
+                class="tab-pane fade show active" 
+                id="stage4-term1" 
+                role="tabpanel" 
+                aria-labelledby="stage4-term1-tab"
+              >
+                <p>في الفصل الأول للمرحلة الرابعة، تحضيرات مشروع التخرج...</p>
+                <ul>
+                  <li>تطوير نظم طبية ذكية متكاملة</li>
+                  <li>تطبيقات الذكاء الاصطناعي في الطب</li>
+                  <li>مشروع التخرج (الجزء الأول)</li>
+                </ul>
+              </div>
+              <!-- Term 2 -->
+              <div 
+                class="tab-pane fade" 
+                id="stage4-term2" 
+                role="tabpanel" 
+                aria-labelledby="stage4-term2-tab"
+              >
+                <p>الفصل الأخير يشمل...</p>
+                <ul>
+                  <li>استكمال مشروع التخرج</li>
+                  <li>تخصصات متقدمة في النظم الطبية الذكية</li>
+                  <li>تقييم النظم والبحوث النهائية</li>
+                </ul>
+              </div>
+              <!-- Sources -->
+              <div 
+                class="tab-pane fade" 
+                id="stage4-sources" 
+                role="tabpanel" 
+                aria-labelledby="stage4-sources-tab"
+              >
+                <p>مصادر عامة للمرحلة الرابعة...</p>
+                <ul>
+                  <li>أبحاث طبية متقدمة</li>
+                  <li>مراجع الذكاء الاصطناعي التطبيقي</li>
+                  <li>دروس مرئية وورش عمل</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Stage 4 Card -->
+      </div>
+    </section>
+    <!-- End Four Stages Section -->
+
+    <!-- Footer -->
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5">
+              <h2 class="ftco-heading-2">هل لديك أسئلة؟</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li>
+                    <span class="icon icon-map-marker"></span>
+                    <span class="text">
+                      203 Fake St. Mountain View, San Francisco, California, USA
+                    </span>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="icon icon-phone"></span>
+                      <span class="text">+2 392 3929 210</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="icon icon-envelope"></span>
+                      <span class="text">info@yourdomain.com</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5">
+              <h2 class="ftco-heading-2">آخر المنشورات</h2>
+              <div class="block-21 mb-4 d-flex">
+                <a
+                  class="blog-img mr-4"
+                  style="background-image: url('images/image_1.jpg');"
+                ></a>
+                <div class="text">
+                  <h3 class="heading">
+                    <a href="#">Even the all-powerful Pointing has no control about</a>
+                  </h3>
+                  <div class="meta">
+                    <div>
+                      <a href="#">
+                        <span class="icon-calendar"></span> June 27, 2019
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#">
+                        <span class="icon-person"></span> Admin
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#">
+                        <span class="icon-chat"></span> 19
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-5 d-flex">
+                <a 
+                  class="blog-img mr-4" 
+                  style="background-image: url('images/image_2.jpg');"
+                ></a>
+                <div class="text">
+                  <h3 class="heading">
+                    <a href="#">Even the all-powerful Pointing has no control about</a>
+                  </h3>
+                  <div class="meta">
+                    <div>
+                      <a href="#">
+                        <span class="icon-calendar"></span> June 27, 2019
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#">
+                        <span class="icon-person"></span> Admin
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#">
+                        <span class="icon-chat"></span> 19
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5 ml-md-4">
+              <h2 class="ftco-heading-2">روابط</h2>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#">
+                    <span class="ion-ios-arrow-round-forward mr-2"></span>Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="ion-ios-arrow-round-forward mr-2"></span>About
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="ion-ios-arrow-round-forward mr-2"></span>Services
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="ion-ios-arrow-round-forward mr-2"></span>Departments
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="ion-ios-arrow-round-forward mr-2"></span>Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5">
+              <h2 class="ftco-heading-2">اشترك معنا!</h2>
+              <form action="#" class="subscribe-form">
+                <div class="form-group">
+                  <input 
+                    type="text"
+                    class="form-control mb-2 text-center" 
+                    placeholder="أدخل بريدك الإلكتروني"
+                  >
+                  <input 
+                    type="submit" 
+                    value="اشترك" 
+                    class="form-control submit px-3"
+                  >
+                </div>
+              </form>
+            </div>
+            <div class="ftco-footer-widget mb-5">
+              <h2 class="ftco-heading-2 mb-0">تواصل معنا</h2>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                <li class="ftco-animate">
+                  <a href="#"><span class="icon-twitter"></span></a>
+                </li>
+                <li class="ftco-animate">
+                  <a href="#"><span class="icon-facebook"></span></a>
+                </li>
+                <li class="ftco-animate">
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>
+              Copyright &copy;
+              <script>document.write(new Date().getFullYear());</script> 
+              All rights reserved | This template is made with 
+              <i class="icon-heart" aria-hidden="true"></i> 
+              by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END Footer -->
+
+    <!-- JS Files (jQuery, Bootstrap, etc.) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script 
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&sensor=false"
+    ></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- AOS Initialization -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // animation duration in ms
+        once: true,     // whether animation should happen only once
+      });
+    </script>
+
+    <!-- Counter Script -->
+    <script>
+      // Animate the counters on scroll
+      $(document).ready(function() {
+        let counterElements = document.querySelectorAll('.number');
+        let counterStarted = false; // To ensure it only animates once
+
+        function startCounters() {
+          if (counterStarted) return;
+          counterStarted = true;
+
+          counterElements.forEach(el => {
+            let endValue = parseInt(el.getAttribute('data-number'));
+            $(el).animateNumber({ number: endValue }, 2000);
+          });
+        }
+
+        // Trigger counters when the element is in view
+        $(window).on('scroll', function() {
+          let countersOffset = $('.counter-wrap').offset()?.top - window.innerHeight;
+          if ($(window).scrollTop() > countersOffset) {
+            startCounters();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
